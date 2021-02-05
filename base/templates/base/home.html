@@ -1,5 +1,57 @@
+<!--
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
 <h3>Hello world</h3>
 
 <img src="{% static 'images/IMG_20200114_205607_123.jpg' %}" alt="">
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'images/IMG_20200114_205607_123.jpg' %}" alt="">
+                    <hr>
+                    <h4>Hi, I am Atharva!</h4>
+                    <p>I am Software Developer, just coding</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body"></div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
